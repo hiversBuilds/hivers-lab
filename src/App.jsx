@@ -1037,7 +1037,10 @@ function MemeFactory() {
             </button>
             {image && (
               <button
-                onClick={() => setImage(null)}
+                onClick={() => {
+                  setImage(null);
+                  if (fileInputRef.current) fileInputRef.current.value = '';
+                }}
                 className="px-3 py-2 text-xs tracking-widest"
                 style={{
                   fontFamily: 'JetBrains Mono, monospace',
@@ -1069,6 +1072,7 @@ function MemeFactory() {
                   setTemplate(t);
                   if (t.autoText) setTextColor(t.autoText);
                   if (t.autoStroke) setStrokeColor(t.autoStroke);
+                  if (fileInputRef.current) fileInputRef.current.value = '';
                 }}
                 className="px-3 py-2 text-xs tracking-widest text-left"
                 style={{
