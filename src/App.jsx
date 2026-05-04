@@ -1735,7 +1735,7 @@ export default function App() {
   const [tab, setTab] = useState('burn');
 
   // ⚠ Replace with your real GitHub URL once the repo is created
-  const GITHUB_URL = 'https://github.com/hivers_Builds/';
+  const GITHUB_URL = 'https://github.com/hiversBuilds/hivers-lab';
 
   return (
     <div

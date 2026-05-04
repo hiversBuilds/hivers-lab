@@ -45,7 +45,7 @@ Price data comes from CoinGecko's free public API.
 ## Run locally
 
 ```bash
-git clone https://github.com/hivers_Builds/hivers-lab.git
+git clone https://github.com/hiversBuilds/hivers-lab.git
 cd hivers-lab
 npm install
 npm run dev
